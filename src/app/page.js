@@ -2,16 +2,21 @@ import { CardPost } from "@/components/CardPost"
 import logger from "@/logger"
 import styles from './page.module.css'
 import Link from "next/link"
+import db from "../../prisma/db"
 
 
 async function getAllPosts(page) {
-  const resonse = await fetch(`http://localhost:3042/posts?_page=${page}&_per_page=6`)
-  if (!resonse.ok) {
-    logger.error('Ops Algo deu errado')
-    return []
+  try {
+
+    const posts = await db.post.findMany() //findMany pega todos os posts encontrados 
+
+    return { data: posts, prev: null, next: null }
+
+
+  } catch (error) {
+    logger.error('Falha ao obter posts', { error })
+    return { data: [], prev: null, next: null }
   }
-  logger.info('Posts Obtidos')
-  return resonse.json()
 }
 
 export default async function Home({ searchParams }) {
@@ -19,7 +24,7 @@ export default async function Home({ searchParams }) {
   const courrentPage = searchParams?.page || 1
 
   const { data: posts, prev, next } = await getAllPosts(courrentPage)
-  
+
   return (
     <main className={styles.grid}>
 
