@@ -1,18 +1,18 @@
 import { Prompt } from 'next/font/google'
 
-import { Aside } from '@/Components/Aside';
+import { Aside } from '@/components/Aside'
 import './globals.css'
+import { SearchForm } from '@/components/SearchForm'
 
 export const metadata = {
-  title: "Code-Conect",
-  description: "Uma rede social para devs!",
-};
+  title: 'Code Connect',
+  description: 'Uma rede social para devs!',
+}
 
 const prompt = Prompt({
-  weight: ['400', '600'],
-  style: ['normal'],
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
-  display: 'swap'
+  display: 'swap',
 })
 
 export default function RootLayout({ children }) {
@@ -20,15 +20,13 @@ export default function RootLayout({ children }) {
     <html lang="pt-br" className={prompt.className}>
       <body>
         <div className='app-container'>
-
           <div>
             <Aside />
           </div>
-          
           <div className='main-content'>
+            <SearchForm />
             {children}
           </div>
-
         </div>
       </body>
     </html>
