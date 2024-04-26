@@ -1,5 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+const { PrismaClient } = require('@prisma/client')
+const prisma = new PrismaClient()
 
 async function main() {
 
@@ -116,20 +116,16 @@ async function main() {
         }
     ];
 
-
-    // Use `Promise.all` to wait for all posts to be created or updated
-    await Promise.all(posts.map(async (post) => {
+    posts.forEach(async (post) => {
         await prisma.post.upsert({
             where: { slug: post.slug },
             update: {},
             create: post
         })
-    }));
+    })
 
-    console.log('Seed ok')
-
+    console.log('Seed OK')
 }
-
 main()
     .then(async () => {
         await prisma.$disconnect()

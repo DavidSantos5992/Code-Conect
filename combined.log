@@ -1,1 +1,4 @@
-{"error":{"clientVersion":"5.13.0","name":"PrismaClientInitializationError"},"level":"error","message":"Falha ao obter posts"}
+{"error":{},"level":"error","message":"Falha ao obter o post com o slug: ","slug":"dicas-de-acessibilidade-websss"}
+{"error":{},"level":"error","message":"Falha ao obter o post com o slug: ","slug":"dicas-de-acessibilidade-websss"}
+{"error":{},"level":"error","message":"Falha ao obter o post com o slug: ","slug":"dicas-de-acessibilidade-webs"}
+{"error":{},"level":"error","message":"Falha ao obter o post com o slug: ","slug":"dicas-de-acessibilidade-webs"}

@@ -1,9 +1,6 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -13,7 +10,6 @@ datasource db {
   url = env("POSTGRES_PRISMA_URL")
   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
-
 
 model User {
   id Int @id @default(autoincrement())
@@ -35,4 +31,3 @@ model Post {
   authorId Int
   author User @relation(fields: [authorId], references: [id])
 }
-
