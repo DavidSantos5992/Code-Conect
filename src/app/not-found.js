@@ -1,5 +1,5 @@
-import { Heading } from "@/components/Heading";
-import { ArrowBack } from "@/components/icons/ArrowBack";
+import { Heading } from "../../src/components/Heading";
+import { ArrowBack } from "../../src/components/icons/ArrowBack";
 import Image from "next/image";
 import Link from "next/link";
 

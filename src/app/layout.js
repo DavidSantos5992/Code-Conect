@@ -1,8 +1,8 @@
 import { Prompt } from 'next/font/google'
 
-import { Aside } from '@/components/Aside'
+import { Aside } from '../../src/components/Aside'
 import './globals.css'
-import { SearchForm } from '@/components/SearchForm'
+import { SearchForm } from '../../src/components/SearchForm'
 
 export const metadata = {
   title: 'Code Connect',
