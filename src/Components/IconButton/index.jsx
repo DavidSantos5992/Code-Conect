@@ -1,9 +1,7 @@
-import styles from './iconButton.modules.css'
+import styles from './iconbutton.module.css'
 
-export const IconButton = ({Children, ...rest}) => {
-    return(
-        <button {...rest} className={styles.btn}>
-            {Children}
-        </button>
-    )
+export const IconButton = ({ children, ...rest }) => {
+    return (<button {...rest} className={styles.btn}>
+        {children}
+    </button>)
 }

@@ -1,17 +1,25 @@
-'user server'
+'use server'
 
-import db from "../../prisma/db"
+import { revalidatePath } from "next/cache";
+import db from "../../prisma/db";
+// import { resolve } from "styled-jsx/css";
 
 export async function incrementThumbsUp(post) {
+
+    // await new Promise((resolve) => setTimeout(resolve, 3000))
 
     await db.post.update({
         where: {
             id: post.id
         },
-        data:{
+        data: {
             likes: {
                 increment: 1
             }
         }
     })
+
+    revalidatePath('/')
+    revalidatePath(`${post.slug}`)
 }
+
