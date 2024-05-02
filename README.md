@@ -1,10 +1,10 @@
 # Next.js: Estratégias de Componentes Server-Side
 
-Curso prático de Next.js focado em Server-Side Rendering (SSR) e desenvolvimento de aplicativos web modernos.
+Prática de Next.js focada em Server-Side Rendering (SSR) e desenvolvimento de aplicativos web modernos.
 
 ## 🔨 Funcionalidades do Projeto
 
-O curso abrange o desenvolvimento de um blog dinâmico com funcionalidades como:
+O projeto abrange o desenvolvimento de um blog dinâmico com funcionalidades como:
 
 - Listagem de posts com paginação.
 - Exibição detalhada de cada post.
@@ -26,7 +26,7 @@ O curso abrange o desenvolvimento de um blog dinâmico com funcionalidades como:
 - `CSS Modules`: Estilização modular e escopada.
 - `Client-Side Navigation`: Navegação eficiente entre páginas com Next.js.
 
-## 🎯 Desafios do Curso
+## 🎯 Desafios 
 
 Implementação de funcionalidades avançadas, como:
 - Consumo de uma API de posts.
