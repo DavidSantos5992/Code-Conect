@@ -1,6 +1,4 @@
-![](thumbnail.png)
-![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
-#  Next.js: estratégias de componentes Server-Side
+# Next.js: Estratégias de Componentes Server-Side
 
 Curso prático de Next.js focado em Server-Side Rendering (SSR) e desenvolvimento de aplicativos web modernos.
 
@@ -12,7 +10,11 @@ O curso abrange o desenvolvimento de um blog dinâmico com funcionalidades como:
 - Exibição detalhada de cada post.
 - Renderização do lado do servidor.
 - Roteamento com App Router.
-- Integração com APIs usando fetch
+- Integração com APIs usando fetch.
+- Funcionalidade de comentar e responder comentários utilizando lógica de modelagem de dados.
+- Schemas criados a partir do Prisma.
+- Utilização do PostgreSQL como banco de dados.
+- Utilização de endpoints para trazer os comentários a partir do clique do usuário sobre o campo.
 
 ## ✔️ Técnicas e Tecnologias Utilizadas
 
@@ -39,4 +41,3 @@ Após baixar o projeto, você pode abrir com seu editor de código preferido. Si
 - Execute `npm install` para instalar as dependências.
 - Inicie o servidor de desenvolvimento com `npm run dev`.
 - Acesse `http://localhost:3000` no navegador para ver o projeto.
-
